@@ -1,4 +1,4 @@
-/* resource "aws_db_instance" "mysql" {
+resource "aws_db_instance" "mysql" {
   allocated_storage    = 10
   db_name              = "mydb"
   engine               = "mysql"
@@ -8,4 +8,4 @@
   password             = "foobarbaz"
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = true
-} */
+}
