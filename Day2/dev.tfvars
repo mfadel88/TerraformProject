@@ -1,0 +1,5 @@
+vpc_cider = "10.0.1.0/16"
+PRI-SN1-cider = "10.0.5.0/24"
+PRI-SN2-cider = "10.0.6.0/24"
+PUB-SN1-cider = "10.0.7.0/24"
+PUB-SN2-cider = "10.0.8.0/24"
