@@ -7,3 +7,14 @@ resource "aws_instance" "Bastion" {
     Name = "Bastion-EC2"
   }
 }
+
+
+resource "aws_instance" "APP-on-PRI" {
+  ami           = "ami-08c40ec9ead489470"
+  instance_type = "t3.micro"
+  subnet_id = module.network.PRI-SN1
+  security_groups = [aws_security_group.allow-SSH-port3000.id]
+  tags = {
+    Name = "APP-on-PRI"
+  }
+}
