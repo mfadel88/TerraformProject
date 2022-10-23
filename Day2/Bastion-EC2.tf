@@ -1,6 +1,7 @@
 resource "aws_instance" "Bastion" {
   ami           = "ami-08c40ec9ead489470"
   instance_type = "t3.micro"
+  associate_public_ip_address = true
   subnet_id = module.network.PUB-SN1
   security_groups = [aws_security_group.allow_SSH.id]
   tags = {

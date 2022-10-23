@@ -1,4 +1,4 @@
-/* resource "aws_db_subnet_group" "db-sn-group" {
+resource "aws_db_subnet_group" "db-sn-group" {
   name       = "db-sn-group"
   subnet_ids = [module.network.PRI-SN1, module.network.PRI-SN2]
 
@@ -19,4 +19,4 @@ resource "aws_db_instance" "mysql" {
   port                 =  3306
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = true
-} */
+}
