@@ -38,5 +38,5 @@
 ### Manual
 -  Verify your email in ses service
 -  Lambda function to send email
--  Trigger to detect changes in state file and send the email
+-  Trigger to detect changes in state file and send the email.
 
